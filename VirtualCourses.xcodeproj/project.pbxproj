@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		88ABE28B261458040058BD0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28A261458040058BD0E /* AppDelegate.swift */; };
 		88ABE28D261458040058BD0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28C261458040058BD0E /* SceneDelegate.swift */; };
-		88ABE28F261458040058BD0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28E261458040058BD0E /* ViewController.swift */; };
+		88ABE28F261458040058BD0E /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28E261458040058BD0E /* CoursesViewController.swift */; };
 		88ABE292261458040058BD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88ABE290261458040058BD0E /* Main.storyboard */; };
 		88ABE294261458040058BD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88ABE293261458040058BD0E /* Assets.xcassets */; };
 		88ABE297261458050058BD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88ABE295261458050058BD0E /* LaunchScreen.storyboard */; };
+		88ABE2A7261459EE0058BD0E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE2A6261459EE0058BD0E /* LoginViewController.swift */; };
+		88ABE2AA261459FD0058BD0E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE2A9261459FD0058BD0E /* RegisterViewController.swift */; };
+		88ABE2AD261462030058BD0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88ABE2AC261462030058BD0E /* GoogleService-Info.plist */; };
+		F6C178C88BF12D18E44ECE33 /* Pods_VirtualCourses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB931E100089558F373D65F7 /* Pods_VirtualCourses.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88ABE287261458040058BD0E /* VirtualCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ABE28A261458040058BD0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88ABE28C261458040058BD0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88ABE28E261458040058BD0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88ABE28E261458040058BD0E /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		88ABE291261458040058BD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88ABE293261458040058BD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88ABE296261458050058BD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88ABE298261458050058BD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88ABE2A6261459EE0058BD0E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88ABE2A9261459FD0058BD0E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		88ABE2AC261462030058BD0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5E38D0B86F17F7B6F86C525 /* Pods-VirtualCourses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualCourses.debug.xcconfig"; path = "Target Support Files/Pods-VirtualCourses/Pods-VirtualCourses.debug.xcconfig"; sourceTree = "<group>"; };
+		EB931E100089558F373D65F7 /* Pods_VirtualCourses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirtualCourses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F458527BCFCBFF43BBBC3706 /* Pods-VirtualCourses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualCourses.release.xcconfig"; path = "Target Support Files/Pods-VirtualCourses/Pods-VirtualCourses.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C178C88BF12D18E44ECE33 /* Pods_VirtualCourses.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1375CE0E07F678B1E95ECC69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB931E100089558F373D65F7 /* Pods_VirtualCourses.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88ABE27E261458040058BD0E = {
 			isa = PBXGroup;
 			children = (
 				88ABE289261458040058BD0E /* VirtualCourses */,
 				88ABE288261458040058BD0E /* Products */,
+				B721D38D0445E5FF1DD496FD /* Pods */,
+				1375CE0E07F678B1E95ECC69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,68 @@
 		88ABE289261458040058BD0E /* VirtualCourses */ = {
 			isa = PBXGroup;
 			children = (
-				88ABE28A261458040058BD0E /* AppDelegate.swift */,
-				88ABE28C261458040058BD0E /* SceneDelegate.swift */,
-				88ABE28E261458040058BD0E /* ViewController.swift */,
-				88ABE290261458040058BD0E /* Main.storyboard */,
-				88ABE293261458040058BD0E /* Assets.xcassets */,
-				88ABE295261458050058BD0E /* LaunchScreen.storyboard */,
+				88ABE2A32614595F0058BD0E /* Resources */,
+				88ABE2A2261459500058BD0E /* Models */,
+				88ABE2A1261459440058BD0E /* Views */,
+				88ABE2A0261459360058BD0E /* Controllers */,
 				88ABE298261458050058BD0E /* Info.plist */,
+				88ABE2AC261462030058BD0E /* GoogleService-Info.plist */,
 			);
 			path = VirtualCourses;
+			sourceTree = "<group>";
+		};
+		88ABE2A0261459360058BD0E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88ABE28E261458040058BD0E /* CoursesViewController.swift */,
+				88ABE2A6261459EE0058BD0E /* LoginViewController.swift */,
+				88ABE2A9261459FD0058BD0E /* RegisterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		88ABE2A1261459440058BD0E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88ABE2A42614597C0058BD0E /* Storyboards */,
+				88ABE293261458040058BD0E /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88ABE2A2261459500058BD0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88ABE2A32614595F0058BD0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88ABE28A261458040058BD0E /* AppDelegate.swift */,
+				88ABE28C261458040058BD0E /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		88ABE2A42614597C0058BD0E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				88ABE290261458040058BD0E /* Main.storyboard */,
+				88ABE295261458050058BD0E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B721D38D0445E5FF1DD496FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5E38D0B86F17F7B6F86C525 /* Pods-VirtualCourses.debug.xcconfig */,
+				F458527BCFCBFF43BBBC3706 /* Pods-VirtualCourses.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88ABE29B261458050058BD0E /* Build configuration list for PBXNativeTarget "VirtualCourses" */;
 			buildPhases = (
+				16050FA289D47D9EF1B14833 /* [CP] Check Pods Manifest.lock */,
 				88ABE283261458040058BD0E /* Sources */,
 				88ABE284261458040058BD0E /* Frameworks */,
 				88ABE285261458040058BD0E /* Resources */,
+				EFAED7B73F0B179ECE24748A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88ABE297261458050058BD0E /* LaunchScreen.storyboard in Resources */,
+				88ABE2AD261462030058BD0E /* GoogleService-Info.plist in Resources */,
 				88ABE294261458040058BD0E /* Assets.xcassets in Resources */,
 				88ABE292261458040058BD0E /* Main.storyboard in Resources */,
 			);
@@ -132,12 +209,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16050FA289D47D9EF1B14833 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VirtualCourses-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFAED7B73F0B179ECE24748A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirtualCourses/Pods-VirtualCourses-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirtualCourses/Pods-VirtualCourses-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VirtualCourses/Pods-VirtualCourses-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88ABE283261458040058BD0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88ABE28F261458040058BD0E /* ViewController.swift in Sources */,
+				88ABE2A7261459EE0058BD0E /* LoginViewController.swift in Sources */,
+				88ABE2AA261459FD0058BD0E /* RegisterViewController.swift in Sources */,
+				88ABE28F261458040058BD0E /* CoursesViewController.swift in Sources */,
 				88ABE28B261458040058BD0E /* AppDelegate.swift in Sources */,
 				88ABE28D261458040058BD0E /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +404,7 @@
 		};
 		88ABE29C261458050058BD0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E38D0B86F17F7B6F86C525 /* Pods-VirtualCourses.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +424,7 @@
 		};
 		88ABE29D261458050058BD0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F458527BCFCBFF43BBBC3706 /* Pods-VirtualCourses.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
