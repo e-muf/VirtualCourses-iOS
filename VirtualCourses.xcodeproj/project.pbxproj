@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884AA5162614801300B97305 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 884AA5152614801300B97305 /* Righteous-Regular.ttf */; };
+		8861B84D2614716F00AB996B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861B84C2614716F00AB996B /* HomeViewController.swift */; };
 		88ABE28B261458040058BD0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28A261458040058BD0E /* AppDelegate.swift */; };
 		88ABE28D261458040058BD0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28C261458040058BD0E /* SceneDelegate.swift */; };
 		88ABE28F261458040058BD0E /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28E261458040058BD0E /* CoursesViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		884AA5152614801300B97305 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
+		8861B84C2614716F00AB996B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		88ABE287261458040058BD0E /* VirtualCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ABE28A261458040058BD0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88ABE28C261458040058BD0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,14 @@
 				EB931E100089558F373D65F7 /* Pods_VirtualCourses.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8861B84F26147C3000AB996B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				884AA5152614801300B97305 /* Righteous-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		88ABE27E261458040058BD0E = {
@@ -93,6 +105,7 @@
 				88ABE28E261458040058BD0E /* CoursesViewController.swift */,
 				88ABE2A6261459EE0058BD0E /* LoginViewController.swift */,
 				88ABE2A9261459FD0058BD0E /* RegisterViewController.swift */,
+				8861B84C2614716F00AB996B /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +129,7 @@
 		88ABE2A32614595F0058BD0E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8861B84F26147C3000AB996B /* Fonts */,
 				88ABE28A261458040058BD0E /* AppDelegate.swift */,
 				88ABE28C261458040058BD0E /* SceneDelegate.swift */,
 			);
@@ -137,7 +151,6 @@
 				C5E38D0B86F17F7B6F86C525 /* Pods-VirtualCourses.debug.xcconfig */,
 				F458527BCFCBFF43BBBC3706 /* Pods-VirtualCourses.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -202,6 +215,7 @@
 			files = (
 				88ABE297261458050058BD0E /* LaunchScreen.storyboard in Resources */,
 				88ABE2AD261462030058BD0E /* GoogleService-Info.plist in Resources */,
+				884AA5162614801300B97305 /* Righteous-Regular.ttf in Resources */,
 				88ABE294261458040058BD0E /* Assets.xcassets in Resources */,
 				88ABE292261458040058BD0E /* Main.storyboard in Resources */,
 			);
@@ -261,6 +275,7 @@
 				88ABE28F261458040058BD0E /* CoursesViewController.swift in Sources */,
 				88ABE28B261458040058BD0E /* AppDelegate.swift in Sources */,
 				88ABE28D261458040058BD0E /* SceneDelegate.swift in Sources */,
+				8861B84D2614716F00AB996B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
