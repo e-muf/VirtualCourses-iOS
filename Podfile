@@ -5,6 +5,8 @@ target 'VirtualCourses' do
 
   # Pods for VirtualCourses
   pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  
   pod 'Firebase/Firestore'
   
   post_install do |installer|

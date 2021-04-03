@@ -7,13 +7,25 @@
 
 import UIKit
 
+import FirebaseAuth
+import GoogleSignIn
+
 class CoursesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        navigationController?.isNavigationBarHidden = true
     }
 
-
+    @IBAction func logOutPressed(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+            print(signOutError)
+        }
+    }
+    
 }
 
