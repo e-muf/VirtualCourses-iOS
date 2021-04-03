@@ -1,0 +1,6 @@
+framework module Pods_FireBaseProof {
+  umbrella header "Pods-FireBaseProof-umbrella.h"
+
+  export *
+  module * { export * }
+}
