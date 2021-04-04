@@ -13,4 +13,5 @@ target 'FireBaseProof' do
   pod 'FirebaseUI/Storage'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'iCarousel'
 end

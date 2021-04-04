@@ -366,6 +366,7 @@ PODS:
   - GTMSessionFetcher/Core (1.5.0)
   - GTMSessionFetcher/Full (1.5.0):
     - GTMSessionFetcher/Core (= 1.5.0)
+  - iCarousel (1.8.3)
   - leveldb-library (1.22.1)
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
@@ -385,6 +386,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseUI/Storage
   - GoogleSignIn
+  - iCarousel
 
 SPEC REPOS:
   trunk:
@@ -412,6 +414,7 @@ SPEC REPOS:
     - gRPC-Core
     - GTMAppAuth
     - GTMSessionFetcher
+    - iCarousel
     - leveldb-library
     - nanopb
     - PromisesObjC
@@ -442,11 +445,12 @@ SPEC CHECKSUMS:
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
 
-PODFILE CHECKSUM: f8fd68cd9835d7f0d05cfa88e12c753f1ea55c81
+PODFILE CHECKSUM: 90e0d4cc39e308e2e55a5ef16e9e5c0dcf9dedc8
 
 COCOAPODS: 1.10.1
