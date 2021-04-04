@@ -53,19 +53,45 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
         picker.dismiss(animated: true, completion: nil)
     }
     
+    
 //    Subir imagenes
     func uploadToCloud(fileURL: URL, name: String){
+//        Nombre de la imagen por Fechas
+        let date = Date()
+        let dateFormater = DateFormatter()
+        dateFormater.locale = Locale(identifier: "es_Es")
+        dateFormater.dateStyle = .medium
+        dateFormater.timeStyle = .medium
+        let names = dateFormater.string(from: date)
         let storage = Storage.storage()
         let data = Data()
         let storageRef = storage.reference()
         let localFule  = fileURL
-        let photoRef = storageRef.child(name)
+//        Guardar las imagenes en una carpeta llamada images/
+        let photoRef = storageRef.child("images/" + names)
+        
         let uploadTask = photoRef.putFile(from: localFule, metadata: nil){(metadata, err) in
             guard let metadata = metadata else{
                 print(err?.localizedDescription)
                 return
             }
             print("Photo Upload!")
+//            Obtener el nombre de los items para el corrouseel
+            let storageReference = storage.reference().child("images/")
+            storageReference.listAll { (result, error) in
+              if let error = error {
+                print("Error")
+              }
+              for prefix in result.prefixes {
+                // The prefixes under storageReference.
+                // You may call listAll(completion:) recursively on them.
+              }
+              for item in result.items {
+                print("Reesultado 1: ", item.name)
+              }
+            }
         }
     }
+    
+    
 }
