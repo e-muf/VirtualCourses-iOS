@@ -16,6 +16,7 @@
 		661241FD2613EF0900B125AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 661241FC2613EF0800B125AA /* GoogleService-Info.plist */; };
 		6612420E2614283D00B125AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6612420D2614283D00B125AA /* HomeViewController.swift */; };
 		6612422E26143FAF00B125AA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6612422D26143FAF00B125AA /* HomeViewController.xib */; };
+		66207F492619AC2E00FBC43C /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66207F482619AC2E00FBC43C /* ImagePickerViewController.swift */; };
 		B1988397249CA5608697BADC /* Pods_FireBaseProof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF449D672DD2D4FCBCDBA5EA /* Pods_FireBaseProof.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		661241FC2613EF0800B125AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6612420D2614283D00B125AA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6612422D26143FAF00B125AA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		66207F482619AC2E00FBC43C /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		9592D6EE6BEE97AD00EFE6F1 /* Pods-FireBaseProof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseProof.release.xcconfig"; path = "Target Support Files/Pods-FireBaseProof/Pods-FireBaseProof.release.xcconfig"; sourceTree = "<group>"; };
 		BF449D672DD2D4FCBCDBA5EA /* Pods_FireBaseProof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseProof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				661241FC2613EF0800B125AA /* GoogleService-Info.plist */,
 				6612420D2614283D00B125AA /* HomeViewController.swift */,
 				6612422D26143FAF00B125AA /* HomeViewController.xib */,
+				66207F482619AC2E00FBC43C /* ImagePickerViewController.swift */,
 			);
 			path = FireBaseProof;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				661241EC2613ED2400B125AA /* ViewController.swift in Sources */,
+				66207F492619AC2E00FBC43C /* ImagePickerViewController.swift in Sources */,
 				661241E82613ED2400B125AA /* AppDelegate.swift in Sources */,
 				661241EA2613ED2400B125AA /* SceneDelegate.swift in Sources */,
 				6612420E2614283D00B125AA /* HomeViewController.swift in Sources */,

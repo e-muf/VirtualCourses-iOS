@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="kLA-9I-lC9">
-                                <rect key="frame" x="87" y="861" width="240" height="1080"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="kLA-9I-lC9">
+                                <rect key="frame" x="87" y="899" width="240" height="1080"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2N4-ag-R3a">
-                                <rect key="frame" x="16" y="104" width="382" height="302"/>
+                                <rect key="frame" x="16" y="104" width="382" height="340"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5L-yz-pkY">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
@@ -78,13 +78,22 @@
                                             <action selector="facebookButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcS-kp-6nk"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewq-R8-BpP">
+                                        <rect key="frame" x="0.0" y="310" width="382" height="30"/>
+                                        <state key="normal" title="Add Image"/>
+                                        <connections>
+                                            <segue destination="Ejn-iI-pFD" kind="show" id="kAa-Q8-OT8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="kLA-9I-lC9" firstAttribute="centerX" secondItem="2N4-ag-R3a" secondAttribute="centerX" id="0j2-wn-7gI"/>
                             <constraint firstItem="kLA-9I-lC9" firstAttribute="top" secondItem="2N4-ag-R3a" secondAttribute="bottom" constant="455" id="4PQ-05-Ykf"/>
+                            <constraint firstItem="kLA-9I-lC9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="6uA-og-1jo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2N4-ag-R3a" secondAttribute="trailing" constant="16" id="BA8-Jy-PFK"/>
                             <constraint firstItem="2N4-ag-R3a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QBb-XT-9Hj"/>
                             <constraint firstItem="2N4-ag-R3a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="qzv-wJ-jcp"/>
@@ -120,12 +129,77 @@
             </objects>
             <point key="canvasLocation" x="-330" y="111"/>
         </scene>
+        <!--Image Picker View Controller-->
+        <scene sceneID="b4J-xB-fcj">
+            <objects>
+                <viewController id="Ejn-iI-pFD" customClass="ImagePickerViewController" customModule="FireBaseProof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yjD-Dz-dfW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-sr-2iv">
+                                <rect key="frame" x="50" y="148" width="314" height="314"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ssj-Ru-gta">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="284"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjM-UD-iIE">
+                                        <rect key="frame" x="0.0" y="284" width="314" height="30"/>
+                                        <state key="normal" title="UploadImage"/>
+                                        <connections>
+                                            <action selector="didTapButton:" destination="Ejn-iI-pFD" eventType="touchUpInside" id="wKL-4P-dOB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ria-Ec-bjT">
+                                <rect key="frame" x="75" y="532" width="249" height="250"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b3h-mT-zqz">
+                                        <rect key="frame" x="0.0" y="0.0" width="249" height="220"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0T-WT-Ovc">
+                                        <rect key="frame" x="0.0" y="220" width="249" height="30"/>
+                                        <state key="normal" title="Ver Imagen Subida"/>
+                                        <connections>
+                                            <action selector="ButtonSubida:" destination="Ejn-iI-pFD" eventType="touchUpInside" id="HWI-if-c8M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e9Z-PQ-aFL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ria-Ec-bjT" firstAttribute="leading" secondItem="e9Z-PQ-aFL" secondAttribute="leading" constant="75" id="3r8-tL-nbP"/>
+                            <constraint firstItem="e9Z-PQ-aFL" firstAttribute="trailing" secondItem="ria-Ec-bjT" secondAttribute="trailing" constant="90" id="6yT-CY-Tuh"/>
+                            <constraint firstItem="hkq-sr-2iv" firstAttribute="leading" secondItem="e9Z-PQ-aFL" secondAttribute="leading" constant="50" id="WWQ-Ru-Xcq"/>
+                            <constraint firstItem="ria-Ec-bjT" firstAttribute="top" secondItem="hkq-sr-2iv" secondAttribute="bottom" constant="70" id="bY7-Oj-BfP"/>
+                            <constraint firstItem="e9Z-PQ-aFL" firstAttribute="trailing" secondItem="hkq-sr-2iv" secondAttribute="trailing" constant="50" id="l1j-LI-vHC"/>
+                            <constraint firstItem="hkq-sr-2iv" firstAttribute="top" secondItem="e9Z-PQ-aFL" secondAttribute="top" constant="60" id="px9-R0-6uO"/>
+                            <constraint firstItem="e9Z-PQ-aFL" firstAttribute="bottom" secondItem="ria-Ec-bjT" secondAttribute="bottom" constant="80" id="qMY-PN-o97"/>
+                            <constraint firstItem="e9Z-PQ-aFL" firstAttribute="bottom" secondItem="hkq-sr-2iv" secondAttribute="bottom" constant="400" id="uCh-JV-Iva"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="s4h-5F-Dfy"/>
+                    <connections>
+                        <outlet property="imageView" destination="Ssj-Ru-gta" id="UmJ-Oc-ogk"/>
+                        <outlet property="imageViewSubida" destination="b3h-mT-zqz" id="N5p-t7-AwE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rU4-il-xcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430.4347826086957" y="116.51785714285714"/>
+        </scene>
     </scenes>
     <resources>
         <image name="3" width="1080" height="1080"/>
         <image name="google-logo2" width="128" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -10,7 +10,7 @@ target 'FireBaseProof' do
   pod 'GoogleSignIn'
   pod 'FacebookLogin'
   #pod 'Firebase/Crashlytics'
-  #pod 'Firebase/RemoteConfig'
+  pod 'FirebaseUI/Storage'
   pod 'Firebase/Firestore'
-  #pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Storage'
 end
