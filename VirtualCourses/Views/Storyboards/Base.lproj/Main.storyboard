@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="906"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6C8-jf-EPG" userLabel="Home Stack View">
-                                <rect key="frame" x="20" y="244" width="374" height="608"/>
+                                <rect key="frame" x="20" y="288" width="374" height="564"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLk-zl-vhv" userLabel="Welcome Stack View">
                                         <rect key="frame" x="37.666666666666657" y="0.0" width="298.66666666666674" height="177.66666666666666"/>
@@ -48,7 +48,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FHd-Iz-Mub" userLabel="Login Stack View">
-                                        <rect key="frame" x="0.0" y="468" width="374" height="140"/>
+                                        <rect key="frame" x="0.0" y="424" width="374" height="140"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLW-Kq-QfN">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rGR-6k-tcf">
-                                <rect key="frame" x="20" y="44" width="374" height="30"/>
+                                <rect key="frame" x="20" y="88" width="374" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7d-rf-BC7">
                                         <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="30"/>
@@ -129,6 +129,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gL-Qx-reY">
+                                <rect key="frame" x="313" y="832" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Course"/>
+                                <connections>
+                                    <segue destination="c8l-mj-afv" kind="show" id="o7x-5x-e8V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -144,6 +152,91 @@
             </objects>
             <point key="canvasLocation" x="2326.0869565217395" y="115.84821428571428"/>
         </scene>
+        <!--Add Course View Controller-->
+        <scene sceneID="7vd-RU-rsn">
+            <objects>
+                <viewController id="c8l-mj-afv" customClass="AddCourseViewController" customModule="VirtualCourses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QcP-1y-Lzk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S4y-oV-qgF">
+                                <rect key="frame" x="20" y="88" width="374" height="296"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUg-AL-605">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="43.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Schedule" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5AE-PG-5PN">
+                                        <rect key="frame" x="0.0" y="63.333333333333343" width="374" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Link Class" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QMc-E4-R2H">
+                                        <rect key="frame" x="0.0" y="126.33333333333333" width="374" height="43.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9JW-2r-QuG">
+                                        <rect key="frame" x="0.0" y="189.66666666666669" width="374" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teq-1r-tro">
+                                        <rect key="frame" x="0.0" y="252.66666666666671" width="374" height="43.333333333333343"/>
+                                        <state key="normal" title="Add Image"/>
+                                        <connections>
+                                            <action selector="addImagePressed:" destination="c8l-mj-afv" eventType="touchUpInside" id="DW3-9y-fpf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VkO-Bu-6EP">
+                                <rect key="frame" x="107" y="393" width="200" height="110"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SCx-hw-sVY">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="110"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiP-db-Ps0">
+                                <rect key="frame" x="164" y="546" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save Course"/>
+                                <connections>
+                                    <action selector="saveCoursePressed:" destination="c8l-mj-afv" eventType="touchUpInside" id="dcn-9e-vjU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Ww-Oi-eKC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Ww-Oi-eKC" firstAttribute="bottom" secondItem="S4y-oV-qgF" secondAttribute="bottom" constant="478" id="2Ko-2Y-gZL"/>
+                            <constraint firstItem="7Ww-Oi-eKC" firstAttribute="trailing" secondItem="S4y-oV-qgF" secondAttribute="trailing" constant="20" id="2eP-w5-2Yx"/>
+                            <constraint firstItem="VkO-Bu-6EP" firstAttribute="centerY" secondItem="QcP-1y-Lzk" secondAttribute="centerY" id="QGX-Cw-kgx"/>
+                            <constraint firstItem="VkO-Bu-6EP" firstAttribute="top" secondItem="S4y-oV-qgF" secondAttribute="bottom" constant="9" id="Sip-OP-kxI"/>
+                            <constraint firstItem="S4y-oV-qgF" firstAttribute="top" secondItem="7Ww-Oi-eKC" secondAttribute="top" id="mpS-bp-n8v"/>
+                            <constraint firstItem="7Ww-Oi-eKC" firstAttribute="bottom" secondItem="VkO-Bu-6EP" secondAttribute="bottom" constant="359" id="nrC-hn-vbm"/>
+                            <constraint firstItem="S4y-oV-qgF" firstAttribute="leading" secondItem="7Ww-Oi-eKC" secondAttribute="leading" constant="20" id="pDP-4Q-1JE"/>
+                            <constraint firstItem="VkO-Bu-6EP" firstAttribute="centerX" secondItem="QcP-1y-Lzk" secondAttribute="centerX" id="r6j-o2-2V3"/>
+                            <constraint firstItem="VkO-Bu-6EP" firstAttribute="leading" secondItem="7Ww-Oi-eKC" secondAttribute="leading" constant="107" id="thR-hV-B64"/>
+                            <constraint firstItem="7Ww-Oi-eKC" firstAttribute="trailing" secondItem="VkO-Bu-6EP" secondAttribute="trailing" constant="107" id="vm7-Nz-UjR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="a9a-Kg-k7t"/>
+                    <connections>
+                        <outlet property="courseImageView" destination="SCx-hw-sVY" id="zV0-CX-vRV"/>
+                        <outlet property="courseNameTextField" destination="iUg-AL-605" id="XD4-7F-ORw"/>
+                        <outlet property="descriptionTextField" destination="9JW-2r-QuG" id="sPv-Vt-Gse"/>
+                        <outlet property="linkClassTextField" destination="QMc-E4-R2H" id="Igk-WA-xa0"/>
+                        <outlet property="scheduleTextField" destination="5AE-PG-5PN" id="zge-rP-6uX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNU-mJ-0Ic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3227.536231884058" y="115.84821428571428"/>
+        </scene>
         <!--Login-->
         <scene sceneID="icJ-BG-God">
             <objects>
@@ -156,12 +249,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqi-MG-lRN" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="84" width="414" height="177"/>
+                                <rect key="frame" x="0.0" y="128" width="414" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="eMy-uS-TiR">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OoA-Lt-a1p" userLabel="Email Textfield">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a@muf.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OoA-Lt-a1p" userLabel="Email Textfield">
                                         <rect key="frame" x="48" y="50" width="318" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -180,12 +273,12 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rk-kY-O8f" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="161" width="414" height="177"/>
+                                <rect key="frame" x="0.0" y="205" width="414" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="MCI-54-9C1">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDj-qF-o7G" userLabel="Password TextField">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="asdf1234" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDj-qF-o7G" userLabel="Password TextField">
                                         <rect key="frame" x="48" y="50" width="318" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -204,7 +297,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVA-gl-KIJ" userLabel="ButtonView">
-                                <rect key="frame" x="0.0" y="238" width="414" height="177"/>
+                                <rect key="frame" x="0.0" y="282" width="414" height="177"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOc-dz-Eu7" userLabel="LoginButton">
                                         <rect key="frame" x="40" y="82" width="334" height="55"/>
@@ -259,9 +352,10 @@
         <!--Navigation Controller-->
         <scene sceneID="7Yp-Ji-l5L">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sjV-hD-GKy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sjV-hD-GKy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RVb-w1-u5n">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -285,7 +379,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXo-Is-pkQ" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="177"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="fWv-mu-N5m">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -309,7 +403,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-7a-xRL" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="121" width="414" height="177"/>
+                                <rect key="frame" x="0.0" y="165" width="414" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="UI1-ui-PXL">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -333,7 +427,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeA-zp-bfx" userLabel="NameView">
-                                <rect key="frame" x="0.0" y="201" width="414" height="177"/>
+                                <rect key="frame" x="0.0" y="245" width="414" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="hvJ-re-ege">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -357,7 +451,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mj-8e-LcH" userLabel="ButtonView">
-                                <rect key="frame" x="0.0" y="281" width="414" height="177"/>
+                                <rect key="frame" x="0.0" y="325" width="414" height="177"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY2-sJ-gC5" userLabel="LoginButton">
                                         <rect key="frame" x="40" y="82" width="334" height="55"/>
@@ -414,7 +508,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0w5-gb-6ma"/>
+        <segue reference="x3g-tj-obd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="VirtualCoursesBackground" width="810" height="1440"/>

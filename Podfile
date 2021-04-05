@@ -8,6 +8,7 @@ target 'VirtualCourses' do
   pod 'GoogleSignIn'
   
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
   
   post_install do |installer|
    installer.pods_project.targets.each do |target|
