@@ -4,165 +4,65 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AppAuth.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>BoringSSL-GRPC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CardSlider-CardSlider.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>CardSlider.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>CardSlider-CardSlider.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>CardSlider.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
 		<key>Firebase.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>5</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>FirebaseAuth.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>6</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>FirebaseCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>7</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>FirebaseCoreDiagnostics.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>8</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>FirebaseFirestore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>9</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>FirebaseStorage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>10</integer>
-=======
->>>>>>> test-branch
-		</dict>
-		<key>GTMAppAuth.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>17</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>18</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>GoogleDataTransport.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>11</integer>
-=======
->>>>>>> test-branch
-		</dict>
-		<key>GoogleSignIn.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>12</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>GoogleUtilities.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>13</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>Pods-VirtualCourses.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>21</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>PromisesObjC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>22</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>abseil.xcscheme</key>
 		<dict>
@@ -173,51 +73,26 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>15</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>gRPC-C++.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>14</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>gRPC-Core.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>16</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>19</integer>
-=======
->>>>>>> test-branch
 		</dict>
 		<key>nanopb.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-<<<<<<< HEAD
-			<key>orderHint</key>
-			<integer>20</integer>
-=======
->>>>>>> test-branch
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

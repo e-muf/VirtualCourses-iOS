@@ -7,19 +7,12 @@
 
 import UIKit
 
-import CardSlider
-
-import FirebaseAuth
-import GoogleSignIn
 import Firebase
 
 class CoursesViewController: UIViewController {
 
     @IBOutlet weak var greetLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    let db = Firestore.firestore()
-    var listener: ListenerRegistration?
     
     var courses: [Course] = []
     let cellScale: CGFloat = 1.0
