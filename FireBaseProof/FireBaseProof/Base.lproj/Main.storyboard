@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="kLA-9I-lC9">
-                                <rect key="frame" x="87" y="899" width="240" height="1080"/>
+                                <rect key="frame" x="87" y="937" width="240" height="1080"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2N4-ag-R3a">
-                                <rect key="frame" x="16" y="104" width="382" height="340"/>
+                                <rect key="frame" x="16" y="104" width="382" height="378"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5L-yz-pkY">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
@@ -85,6 +85,13 @@
                                             <segue destination="Ejn-iI-pFD" kind="show" id="kAa-Q8-OT8"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrH-ZY-WdN">
+                                        <rect key="frame" x="0.0" y="348" width="382" height="30"/>
+                                        <state key="normal" title="Corrousel"/>
+                                        <connections>
+                                            <segue destination="bFn-2n-crT" kind="show" id="xe7-Z1-GgP"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -129,6 +136,42 @@
             </objects>
             <point key="canvasLocation" x="-330" y="111"/>
         </scene>
+        <!--Corrousel2 View Controller-->
+        <scene sceneID="bZv-8S-jcJ">
+            <objects>
+                <viewController id="bFn-2n-crT" customClass="Corrousel2ViewController" customModule="FireBaseProof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y0p-W5-uVy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSc-fm-Thd">
+                                <rect key="frame" x="20" y="188" width="374" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="vtS-tG-w6m"/>
+                                </constraints>
+                                <state key="normal" title="Show Card Slider"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="bFn-2n-crT" eventType="touchUpInside" id="u37-pu-wIV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HJm-XC-RZM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VSc-fm-Thd" firstAttribute="top" secondItem="HJm-XC-RZM" secondAttribute="top" constant="100" id="34C-rv-Gem"/>
+                            <constraint firstItem="VSc-fm-Thd" firstAttribute="leading" secondItem="HJm-XC-RZM" secondAttribute="leading" constant="20" id="VUH-WP-8ZM"/>
+                            <constraint firstItem="HJm-XC-RZM" firstAttribute="trailing" secondItem="VSc-fm-Thd" secondAttribute="trailing" constant="20" id="dEs-Y5-koN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vtu-MP-gqu"/>
+                    <connections>
+                        <outlet property="myButton" destination="VSc-fm-Thd" id="4N9-VG-At4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFq-qG-5VG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="844"/>
+        </scene>
         <!--Image Picker View Controller-->
         <scene sceneID="b4J-xB-fcj">
             <objects>
@@ -156,21 +199,11 @@
                                 <rect key="frame" x="75" y="532" width="249" height="250"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b3h-mT-zqz">
-                                        <rect key="frame" x="0.0" y="0.0" width="249" height="190"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="249" height="220"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0T-WT-Ovc">
-                                        <rect key="frame" x="0.0" y="190" width="249" height="30"/>
-                                        <state key="normal" title="Ver Imagen Subida"/>
-                                        <connections>
-                                            <action selector="ButtonSubida:" destination="Ejn-iI-pFD" eventType="touchUpInside" id="HWI-if-c8M"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsk-bp-zr8">
                                         <rect key="frame" x="0.0" y="220" width="249" height="30"/>
-                                        <state key="normal" title="Corrousel"/>
-                                        <connections>
-                                            <segue destination="KCc-Qd-t0b" kind="show" id="u1X-Eo-Un9"/>
-                                        </connections>
+                                        <state key="normal" title="Ver Imagen Subida"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -191,28 +224,11 @@
                     <navigationItem key="navigationItem" id="s4h-5F-Dfy"/>
                     <connections>
                         <outlet property="imageView" destination="Ssj-Ru-gta" id="UmJ-Oc-ogk"/>
-                        <outlet property="imageViewSubida" destination="b3h-mT-zqz" id="N5p-t7-AwE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rU4-il-xcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1430.4347826086957" y="116.51785714285714"/>
-        </scene>
-        <!--Corrousel View Controller-->
-        <scene sceneID="J0I-TE-Ux4">
-            <objects>
-                <viewController id="KCc-Qd-t0b" customClass="CorrouselViewController" customModule="FireBaseProof" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jDA-Lc-ykL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="x3y-bg-Xqg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="bi2-c7-S1C"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qWM-zL-hOr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2381" y="110"/>
         </scene>
     </scenes>
     <resources>

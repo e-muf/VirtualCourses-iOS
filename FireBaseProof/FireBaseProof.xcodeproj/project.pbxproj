@@ -18,6 +18,7 @@
 		6612422E26143FAF00B125AA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6612422D26143FAF00B125AA /* HomeViewController.xib */; };
 		66207F492619AC2E00FBC43C /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66207F482619AC2E00FBC43C /* ImagePickerViewController.swift */; };
 		66207FE1261A2FDE00FBC43C /* CorrouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66207FE0261A2FDE00FBC43C /* CorrouselViewController.swift */; };
+		66AE23FC261E9B82003D74FF /* Corrousel2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE23FB261E9B82003D74FF /* Corrousel2ViewController.swift */; };
 		B1988397249CA5608697BADC /* Pods_FireBaseProof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF449D672DD2D4FCBCDBA5EA /* Pods_FireBaseProof.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		6612422D26143FAF00B125AA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		66207F482619AC2E00FBC43C /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		66207FE0261A2FDE00FBC43C /* CorrouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrouselViewController.swift; sourceTree = "<group>"; };
+		66AE23FB261E9B82003D74FF /* Corrousel2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corrousel2ViewController.swift; sourceTree = "<group>"; };
 		9592D6EE6BEE97AD00EFE6F1 /* Pods-FireBaseProof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseProof.release.xcconfig"; path = "Target Support Files/Pods-FireBaseProof/Pods-FireBaseProof.release.xcconfig"; sourceTree = "<group>"; };
 		BF449D672DD2D4FCBCDBA5EA /* Pods_FireBaseProof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseProof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				6612422D26143FAF00B125AA /* HomeViewController.xib */,
 				66207F482619AC2E00FBC43C /* ImagePickerViewController.swift */,
 				66207FE0261A2FDE00FBC43C /* CorrouselViewController.swift */,
+				66AE23FB261E9B82003D74FF /* Corrousel2ViewController.swift */,
 			);
 			path = FireBaseProof;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				661241EC2613ED2400B125AA /* ViewController.swift in Sources */,
 				66207F492619AC2E00FBC43C /* ImagePickerViewController.swift in Sources */,
 				661241E82613ED2400B125AA /* AppDelegate.swift in Sources */,
+				66AE23FC261E9B82003D74FF /* Corrousel2ViewController.swift in Sources */,
 				66207FE1261A2FDE00FBC43C /* CorrouselViewController.swift in Sources */,
 				661241EA2613ED2400B125AA /* SceneDelegate.swift in Sources */,
 				6612420E2614283D00B125AA /* HomeViewController.swift in Sources */,

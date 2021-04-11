@@ -63,6 +63,7 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
         dateFormater.dateStyle = .medium
         dateFormater.timeStyle = .medium
         let names = dateFormater.string(from: date)
+        
         let storage = Storage.storage()
         let data = Data()
         let storageRef = storage.reference()
