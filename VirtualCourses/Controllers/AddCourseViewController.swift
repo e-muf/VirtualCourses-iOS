@@ -26,33 +26,7 @@ class AddCourseViewController: UIViewController, UINavigationControllerDelegate 
         super.viewDidLoad()
     }
     
-    func uploadToCloud(fileURL: URL, completion:@escaping((String?) -> ())) {
-        let date = Date()
-        let dateFormatter = DateFormatter()
-        
-        dateFormatter.locale = Locale(identifier: "es_Es")
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .medium
-        
-        let name = dateFormatter.string(from: date)
-        let storage = Storage.storage().reference()
-        
-        storage.child("images/\(name)").putFile(from: fileURL, metadata: nil){ (metadata, err) in
-            if let error = err {
-                print(error)
-            }
-            
-            print("Photo Upload!")
-            
-            storage.child("images/\(name)").downloadURL(completion: { url, error in
-                guard let url = url, error == nil else{
-                    return
-                }
-                
-                completion(url.absoluteString)
-            })
-        }
-    }
+    
     
     @IBAction func addImagePressed(_ sender: Any) {
         // let storage = Storage.storage()
@@ -70,13 +44,15 @@ class AddCourseViewController: UIViewController, UINavigationControllerDelegate 
            let description = descriptionTextField.text,
            let owner = Auth.auth().currentUser?.email {
             
-            uploadToCloud(fileURL: self.pathImage!) { (url) in
+            CoursesService.uploadToCloud(fileURL: self.pathImage!) { (url) in
                 if let urlImage = url {
                     self.saveToDB(courseName, schedule, linkClass, description, urlImage, owner)
                 }
             }
         }
         
+        
+        navigationController?.popViewController(animated: true)
     }
     
     func saveToDB(_ courseName: String, _ schedule: String, _ linkClass: String, _ description: String, _ urlImage: String, _ owner: String) {
