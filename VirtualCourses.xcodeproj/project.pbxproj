@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		884AA5162614801300B97305 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 884AA5152614801300B97305 /* Righteous-Regular.ttf */; };
 		8861B84D2614716F00AB996B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861B84C2614716F00AB996B /* HomeViewController.swift */; };
+		88645F2226229D3300C9F8FC /* CoursesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88645F2126229D3300C9F8FC /* CoursesService.swift */; };
+		88645F2526229DD300C9F8FC /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88645F2426229DD300C9F8FC /* Course.swift */; };
+		88645F2C2622E40400C9F8FC /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88645F2B2622E40400C9F8FC /* CourseCollectionViewCell.swift */; };
 		886B1851261AD6650028F034 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886B1850261AD6650028F034 /* AddCourseViewController.swift */; };
 		88ABE28B261458040058BD0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28A261458040058BD0E /* AppDelegate.swift */; };
 		88ABE28D261458040058BD0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28C261458040058BD0E /* SceneDelegate.swift */; };
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		884AA5152614801300B97305 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
 		8861B84C2614716F00AB996B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		88645F2126229D3300C9F8FC /* CoursesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesService.swift; sourceTree = "<group>"; };
+		88645F2426229DD300C9F8FC /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Course.swift; path = VirtualCourses/Services/Course.swift; sourceTree = SOURCE_ROOT; };
+		88645F2B2622E40400C9F8FC /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
 		886B1850261AD6650028F034 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
 		88ABE287261458040058BD0E /* VirtualCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ABE28A261458040058BD0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +76,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		88645F2026229D0900C9F8FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				88645F2126229D3300C9F8FC /* CoursesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		88ABE27E261458040058BD0E = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +109,7 @@
 				88ABE2A2261459500058BD0E /* Models */,
 				88ABE2A1261459440058BD0E /* Views */,
 				88ABE2A0261459360058BD0E /* Controllers */,
+				88645F2026229D0900C9F8FC /* Services */,
 				88ABE298261458050058BD0E /* Info.plist */,
 				88ABE2AC261462030058BD0E /* GoogleService-Info.plist */,
 			);
@@ -118,6 +133,7 @@
 			children = (
 				88ABE2A42614597C0058BD0E /* Storyboards */,
 				88ABE293261458040058BD0E /* Assets.xcassets */,
+				88645F2B2622E40400C9F8FC /* CourseCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +141,7 @@
 		88ABE2A2261459500058BD0E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				88645F2426229DD300C9F8FC /* Course.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,10 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88645F2526229DD300C9F8FC /* Course.swift in Sources */,
 				88ABE2A7261459EE0058BD0E /* LoginViewController.swift in Sources */,
 				88ABE2AA261459FD0058BD0E /* RegisterViewController.swift in Sources */,
+				88645F2C2622E40400C9F8FC /* CourseCollectionViewCell.swift in Sources */,
 				88ABE28F261458040058BD0E /* CoursesViewController.swift in Sources */,
 				88ABE28B261458040058BD0E /* AppDelegate.swift in Sources */,
+				88645F2226229D3300C9F8FC /* CoursesService.swift in Sources */,
 				886B1851261AD6650028F034 /* AddCourseViewController.swift in Sources */,
 				88ABE28D261458040058BD0E /* SceneDelegate.swift in Sources */,
 				8861B84D2614716F00AB996B /* HomeViewController.swift in Sources */,
