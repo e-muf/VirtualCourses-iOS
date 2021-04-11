@@ -43,15 +43,16 @@ class AddCourseViewController: UIViewController, UINavigationControllerDelegate 
            let linkClass = linkClassTextField.text,
            let description = descriptionTextField.text,
            let owner = Auth.auth().currentUser?.email {
-            
-            CoursesService.uploadToCloud(fileURL: self.pathImage!) { (url) in
-                if let urlImage = url {
-                    self.saveToDB(courseName, schedule, linkClass, description, urlImage, owner)
+            if courseName == "" || schedule == "" || linkClass == "" || description == "" || self.pathImage?.absoluteString == nil{
+                showAlert()
+            }else{
+                CoursesService.uploadToCloud(fileURL: self.pathImage!) { (url) in
+                    if let urlImage = url {
+                        self.saveToDB(courseName, schedule, linkClass, description, urlImage, owner)
+                    }
                 }
             }
         }
-        
-        
         navigationController?.popViewController(animated: true)
     }
     
@@ -70,6 +71,11 @@ class AddCourseViewController: UIViewController, UINavigationControllerDelegate 
                 print("Data successfully upload.")
             }
         }
+    }
+    func showAlert(){
+        let alert = UIAlertController(title: "¡¡¡Atencion!!!", message: "Te falta Llenar algún campo\n¡Por favor Chécalo!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alert, animated: true)
     }
 }
 
