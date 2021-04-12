@@ -13,6 +13,7 @@
 		88645F2526229DD300C9F8FC /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88645F2426229DD300C9F8FC /* Course.swift */; };
 		88645F2C2622E40400C9F8FC /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88645F2B2622E40400C9F8FC /* CourseCollectionViewCell.swift */; };
 		886B1851261AD6650028F034 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886B1850261AD6650028F034 /* AddCourseViewController.swift */; };
+		88749F7726241F00009A6730 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88749F7626241F00009A6730 /* GoogleService-Info.plist */; };
 		88ABE28B261458040058BD0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28A261458040058BD0E /* AppDelegate.swift */; };
 		88ABE28D261458040058BD0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28C261458040058BD0E /* SceneDelegate.swift */; };
 		88ABE28F261458040058BD0E /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE28E261458040058BD0E /* CoursesViewController.swift */; };
@@ -21,7 +22,6 @@
 		88ABE297261458050058BD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88ABE295261458050058BD0E /* LaunchScreen.storyboard */; };
 		88ABE2A7261459EE0058BD0E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE2A6261459EE0058BD0E /* LoginViewController.swift */; };
 		88ABE2AA261459FD0058BD0E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABE2A9261459FD0058BD0E /* RegisterViewController.swift */; };
-		88ABE2AD261462030058BD0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88ABE2AC261462030058BD0E /* GoogleService-Info.plist */; };
 		F6C178C88BF12D18E44ECE33 /* Pods_VirtualCourses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB931E100089558F373D65F7 /* Pods_VirtualCourses.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +32,7 @@
 		88645F2426229DD300C9F8FC /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Course.swift; path = VirtualCourses/Services/Course.swift; sourceTree = SOURCE_ROOT; };
 		88645F2B2622E40400C9F8FC /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
 		886B1850261AD6650028F034 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		88749F7626241F00009A6730 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		88ABE287261458040058BD0E /* VirtualCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ABE28A261458040058BD0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88ABE28C261458040058BD0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		88ABE298261458050058BD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88ABE2A6261459EE0058BD0E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		88ABE2A9261459FD0058BD0E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		88ABE2AC261462030058BD0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C5E38D0B86F17F7B6F86C525 /* Pods-VirtualCourses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualCourses.debug.xcconfig"; path = "Target Support Files/Pods-VirtualCourses/Pods-VirtualCourses.debug.xcconfig"; sourceTree = "<group>"; };
 		EB931E100089558F373D65F7 /* Pods_VirtualCourses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirtualCourses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F458527BCFCBFF43BBBC3706 /* Pods-VirtualCourses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualCourses.release.xcconfig"; path = "Target Support Files/Pods-VirtualCourses/Pods-VirtualCourses.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				88ABE2A0261459360058BD0E /* Controllers */,
 				88645F2026229D0900C9F8FC /* Services */,
 				88ABE298261458050058BD0E /* Info.plist */,
-				88ABE2AC261462030058BD0E /* GoogleService-Info.plist */,
+				88749F7626241F00009A6730 /* GoogleService-Info.plist */,
 			);
 			path = VirtualCourses;
 			sourceTree = "<group>";
@@ -234,8 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88ABE297261458050058BD0E /* LaunchScreen.storyboard in Resources */,
-				88ABE2AD261462030058BD0E /* GoogleService-Info.plist in Resources */,
 				884AA5162614801300B97305 /* Righteous-Regular.ttf in Resources */,
+				88749F7726241F00009A6730 /* GoogleService-Info.plist in Resources */,
 				88ABE294261458040058BD0E /* Assets.xcassets in Resources */,
 				88ABE292261458040058BD0E /* Main.storyboard in Resources */,
 			);

@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>503194985871-fhf6931qqlruitpn2qisk3jvnakgssgo.apps.googleusercontent.com</string>
+	<string>840040728607-meigv97im2nn8tts4osamuk7ap7jtmaj.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.503194985871-fhf6931qqlruitpn2qisk3jvnakgssgo</string>
+	<string>com.googleusercontent.apps.840040728607-meigv97im2nn8tts4osamuk7ap7jtmaj</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDUyYF6LzOyuP426HMOy5Gor_11fkrXxmc</string>
+	<string>AIzaSyAc-NTmStV11sPARRrP3IywKQgpn3Uiqzo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>503194985871</string>
+	<string>840040728607</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.emuf-trained.VirtualCourses</string>
 	<key>PROJECT_ID</key>
-	<string>virtual-courses-ios</string>
+	<string>virtualcourses-ios</string>
 	<key>STORAGE_BUCKET</key>
-	<string>virtual-courses-ios.appspot.com</string>
+	<string>virtualcourses-ios.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:503194985871:ios:6e554344dc77a6328197fa</string>
+	<string>1:840040728607:ios:d68a3bac34215300b72d2a</string>
 </dict>
 </plist>
