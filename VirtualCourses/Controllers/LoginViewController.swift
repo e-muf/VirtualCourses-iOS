@@ -24,12 +24,18 @@ class LoginViewController: UIViewController {
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
                 if let e = error {
-                    print(e)
+                    print("Aqui hay un error: ", e)
+                    self.showAlert()
                 } else {
                     self.performSegue(withIdentifier: "loginSegue", sender: self)
                 }
             }
         }
+    }
+    func showAlert(){
+        let alert = UIAlertController(title: "Error en el Login", message: "Revisa si los datos introducidos son correctos", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alert, animated: true)
     }
 
 }

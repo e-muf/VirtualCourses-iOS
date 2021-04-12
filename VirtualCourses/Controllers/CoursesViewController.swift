@@ -13,12 +13,17 @@ class CoursesViewController: UIViewController {
 
     @IBOutlet weak var greetLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var Spinner: UIActivityIndicatorView!
+    
     private let db = Firestore.firestore()
     var courses: [Course] = []
     let cellScale: CGFloat = 1.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Spinner.startAnimating()
+        Spinner.hidesWhenStopped = true
         collectionView.dataSource = self
         greeting()
         let screenSize = UIScreen.main.bounds.size
@@ -32,6 +37,7 @@ class CoursesViewController: UIViewController {
         
         collectionView.contentInset = UIEdgeInsets(top: insetY, left: insetX, bottom: insetY, right: insetX)
         self.getAllCoures()
+//        Spinner.stopAnimating()
         
     }
     
@@ -69,7 +75,7 @@ class CoursesViewController: UIViewController {
                             }
                         
                         }
-                        
+                        self.Spinner.stopAnimating()
                     }
             }
         }
