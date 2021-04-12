@@ -26,7 +26,7 @@ struct CoursesService {
                         let courseName = course["courseName"] as! String
                         let description = course["description"] as! String
                         let schedule = course["schedule"] as! String
-                        let linkClass = URL(string: course["linkClass"] as! String)
+                        let linkClass = course["linkClass"] as! String
                         
                         let urlImage = URL(string: course["urlImage"] as! String)
                         guard let data = try? Data(contentsOf: urlImage!) else { return }
@@ -34,7 +34,7 @@ struct CoursesService {
                         coursesOwner.append(Course(courseName: courseName,
                                                    description: description,
                                                    schedule: schedule,
-                                                   linkClass: linkClass!,
+                                                   linkClass: linkClass,
                                                    imageCourse: UIImage(data: data)!))
                     }
                     
@@ -70,4 +70,21 @@ struct CoursesService {
             })
         }
     }
+    static func getName(completion:@escaping((String?) -> ())) {
+        let userEmail = Auth.auth().currentUser?.email
+        var userName: String = ""
+        db.collection("users").document(userEmail!)
+            .getDocument{ (document, error) in
+                if let error = error {
+                    print(error)
+                }else {
+                    if let document = document{
+                        let user = document.data()
+                        userName = user!["name"] as! String                        
+                        completion(userName)
+
+                    }
+                }
+    }
+}
 }

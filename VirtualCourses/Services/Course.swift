@@ -11,6 +11,6 @@ struct Course {
     let courseName: String
     let description: String
     let schedule: String
-    let linkClass: URL
+    let linkClass: String
     let imageCourse: UIImage
 }
