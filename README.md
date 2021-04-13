@@ -46,7 +46,6 @@ El guardado de la imagen se hace con ayuda de *firestore*, esto creando una carp
 
 ### Video
 
-Se puede ver un video del funcionamiento en el siguiente enlace:
-
+Se puede ver un video del funcionamiento en el siguiente enlace: https://youtu.be/srrzsx7K5pE
 
 
