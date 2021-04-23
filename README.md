@@ -1,6 +1,6 @@
-# Virtual Course - IO's
+# Virtual Course - iOS
 
-Este repositorio contiene el códgio realizado para el primer proyecto del Diplomado de aplicaciones Móviles IO'S generación 5. A continuación se describe los integrantes, la problemática y la implementación de la posible solución
+Este repositorio contiene un proyecto desarrollado en lenguaje Swift, utilizando el patrón de diseño MVC, servirá para que alumnos de diferentes instituciones puedan llevar de una manera más sencilla la organización de sus cursos virtuales, además se puede usar como una herramientas de enseñanza para futuros cursos de Swift.
 
 ## Integrantes
 
