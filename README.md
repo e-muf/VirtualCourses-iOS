@@ -1,4 +1,4 @@
-# Virtual Course - iOS
+# Virtual Courses - iOS
 
 Este repositorio contiene un proyecto desarrollado en lenguaje Swift, utilizando el patrón de diseño MVC, servirá para que alumnos de diferentes instituciones puedan llevar de una manera más sencilla la organización de sus cursos virtuales, además se puede usar como una herramientas de enseñanza para futuros cursos de Swift.
 
